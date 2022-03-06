@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="1팀 이름"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/team1Edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginLeft="9dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="2팀 이름"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_below="@id/textView1"/>
+
+    <EditText
+        android:id="@+id/team2Edittxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_below="@id/team1Edittxt"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <include
+        android:id="@+id/time_select_layout"
+        layout="@layout/radiogroup_time_select"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/time_select_layout"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

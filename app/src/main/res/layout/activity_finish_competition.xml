@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    >
+
+    <TextView
+        android:id="@+id/team1txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="오렌지먹어"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/team2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team1txt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="오렌지먹어"
+        android:textSize="40sp" />
+
+    <include
+        android:id="@+id/result_layout1"
+        layout="@layout/textview_result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/team1txt" />
+
+    <include
+        android:id="@+id/result_layout2"
+        layout="@layout/textview_result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_layout1"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/team2txt" />
+
+    <TextView
+        android:id="@+id/winnertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_layout2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="~~~~팀 승리!"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/competitiongohomebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnertxt"
+        android:onClick="ongohomebtnClick"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="홈으로" />
+
+</RelativeLayout>

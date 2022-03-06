@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="깔면 다 돼\n스피드퀴즈!"
+        android:textSize="18pt" />
+
+    <Button
+        android:id="@+id/modebtn1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="기본 모드"
+        android:textSize="10pt"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/modebtn2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="두팀 대결"
+        android:textSize="10pt"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/rankingbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="기록"
+        android:textSize="10pt"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/outbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:textSize="10pt"
+        android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>

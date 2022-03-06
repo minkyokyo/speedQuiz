@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/result_layout"
+        layout="@layout/textview_result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/midgohomebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_layout"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="ongohomebtnClick"
+        android:textSize="25dp"
+        android:text="홈으로" />
+
+    <Button
+        android:id="@+id/team2startbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_layout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/midgohomebtn"
+        android:textSize="25dp"
+        android:text="2팀 시작" />
+
+
+</RelativeLayout>

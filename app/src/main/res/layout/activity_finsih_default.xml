@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+ >
+    <include
+        android:id="@+id/result_layout"
+        layout="@layout/textview_result_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <Button
+        android:id="@+id/gohomebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result_layout"
+        android:text="홈으로"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:onClick="ongohomebtnClick"/>
+</RelativeLayout>
